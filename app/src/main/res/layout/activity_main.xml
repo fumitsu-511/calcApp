@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数値を入力し、演算子を押してください。"
+            android:id="@+id/label"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/errormessage"
+            android:textColor="#E91E63"/>
+
+    <TextView
+            android:id="@+id/dummy_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:visibility="invisible" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入力値1"
+                android:id="@+id/t1"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/input1"
+                android:hint="数値を入力してください。"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入力値2"
+            android:id="@+id/t2"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/input2"
+            android:hint="数値を入力してください。"
+            android:maxLines="1"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/dummy_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:visibility="invisible" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="＋"
+            android:id="@+id/addition"
+            android:layout_margin="10dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="－"
+            android:id="@+id/subtraction"
+            android:layout_margin="10dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:id="@+id/multiplication"
+            android:layout_margin="10dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="÷"
+            android:id="@+id/division"
+            android:layout_margin="10dp"/>
+
+</LinearLayout>
